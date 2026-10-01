@@ -1,8 +1,8 @@
 {
   "format": 2,
   "name": "@greenpandastudios/aug-blake3",
-  "version": "0.1.0",
-  "compiler": "0.21.0-native.1",
+  "version": "0.1.1",
+  "compiler": "0.21.0",
   "source": "src",
   "dependencies": {},
   "native": {
@@ -25,7 +25,7 @@
           "cpuBaseline": "armv8-a",
           "libc": "libSystem"
         },
-        "url": "https://github.com/GreenPandaStudios/aug-blake3/releases/download/v0.1.0/native-macos-arm64.tar.gz",
+        "url": "https://github.com/GreenPandaStudios/aug-blake3/releases/download/v0.1.1/native-macos-arm64.tar.gz",
         "sha256": "0b754540be9cc091e8ccd0d64fae9960f6ac72b89b84bfaaa016eb36237e07a4",
         "maximumDownloadBytes": 171974,
         "maximumUnpackedBytes": 500941,
