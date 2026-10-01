@@ -1,0 +1,9 @@
+{
+  "format": 1,
+  "files": [
+    "src/api.aug.md",
+    "src/contracts.aug.md",
+    "src/export.aug.md"
+  ],
+  "digest": "72eb8c67b2bb515036d3f4560599f9bf0292732067d6c97bf0dcd2481fcf2e42"
+}

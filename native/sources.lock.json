@@ -1,0 +1,79 @@
+{
+  "format": 1,
+  "upstream": {
+    "repository": "https://github.com/BLAKE3-team/BLAKE3",
+    "version": "1.8.7",
+    "sourceRevision": "6d9e454fc11f76977dc803893aff6304ed33d6a26efae8696573bea74baa27ae"
+  },
+  "target": "aarch64-apple-darwin",
+  "minimumOS": "14.0",
+  "rust": "1.98.1",
+  "features": [
+    "std",
+    "pure"
+  ],
+  "panic": "unwind",
+  "inputs": [
+    {
+      "cargoLock": "native/Cargo.lock",
+      "crateChecksum": "6d9e454fc11f76977dc803893aff6304ed33d6a26efae8696573bea74baa27ae"
+    }
+  ],
+  "cargoLockSha256": "a514c6f97adec4760efdfb3f344af82dc8a49cf3c906d7a560b6e870aa5536a2",
+  "crates": [
+    {
+      "name": "arrayvec",
+      "version": "0.7.8",
+      "license": "MIT OR Apache-2.0",
+      "source": "registry+https://github.com/rust-lang/crates.io-index"
+    },
+    {
+      "name": "blake3",
+      "version": "1.8.7",
+      "license": "CC0-1.0 OR Apache-2.0 OR Apache-2.0 WITH LLVM-exception",
+      "source": "registry+https://github.com/rust-lang/crates.io-index"
+    },
+    {
+      "name": "cc",
+      "version": "1.5.1",
+      "license": "MIT OR Apache-2.0",
+      "source": "registry+https://github.com/rust-lang/crates.io-index"
+    },
+    {
+      "name": "cfg-if",
+      "version": "1.0.5",
+      "license": "MIT OR Apache-2.0",
+      "source": "registry+https://github.com/rust-lang/crates.io-index"
+    },
+    {
+      "name": "constant_time_eq",
+      "version": "0.4.2",
+      "license": "CC0-1.0 OR MIT-0 OR Apache-2.0",
+      "source": "registry+https://github.com/rust-lang/crates.io-index"
+    },
+    {
+      "name": "cpufeatures",
+      "version": "0.3.1",
+      "license": "MIT OR Apache-2.0",
+      "source": "registry+https://github.com/rust-lang/crates.io-index"
+    },
+    {
+      "name": "find-msvc-tools",
+      "version": "0.1.14",
+      "license": "MIT OR Apache-2.0",
+      "source": "registry+https://github.com/rust-lang/crates.io-index"
+    },
+    {
+      "name": "libc",
+      "version": "0.2.189",
+      "license": "MIT OR Apache-2.0",
+      "source": "registry+https://github.com/rust-lang/crates.io-index"
+    },
+    {
+      "name": "shlex",
+      "version": "2.0.1",
+      "license": "MIT OR Apache-2.0",
+      "source": "registry+https://github.com/rust-lang/crates.io-index"
+    }
+  ]
+}

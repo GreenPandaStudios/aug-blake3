@@ -1,0 +1,1 @@
+BLAKE3 1.8.7 Rust crate and its exact Cargo.lock dependencies. Licenses are retained in native/licenses and the artifact licenses directory. Rust 1.98.1 standard library: MIT OR Apache-2.0. August adapter: MIT.
