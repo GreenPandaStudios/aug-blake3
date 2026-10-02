@@ -16,6 +16,102 @@
     },
     "artifacts": [
       {
+        "id": "linux-arm64",
+        "target": {
+          "triple": "aarch64-unknown-linux-gnu",
+          "os": "linux",
+          "arch": "arm64",
+          "minimumLibc": "2.36",
+          "cpuBaseline": "armv8-a",
+          "libc": "glibc"
+        },
+        "url": "https://github.com/GreenPandaStudios/aug-blake3/releases/download/v0.1.3/native-linux-arm64.tar.gz",
+        "sha256": "69e4de7c1928254c2fb285b0ecd557c4dd1346e9207d0b7ef56e00957caae748",
+        "maximumDownloadBytes": 90298456,
+        "maximumUnpackedBytes": 90976771,
+        "link": {
+          "kind": "dynamic",
+          "libraries": [
+            "lib/libaug_blake3.so.1"
+          ]
+        },
+        "runtime": {
+          "files": [
+            "lib/libaug_blake3.so.1",
+            "lib/libgcc_s.so.1"
+          ],
+          "closureManifest": "runtime-files.json",
+          "relocation": "loader-relative"
+        },
+        "components": [
+          {
+            "id": "https://github.com/BLAKE3-team/BLAKE3",
+            "version": "1.8.7",
+            "compatibilityKey": "aug-blake3-runtime",
+            "linkage": "static",
+            "required": true
+          },
+          {
+            "id": "gcc-runtime",
+            "version": "12.2.0-14+deb12u1",
+            "compatibilityKey": "gcc-runtime",
+            "linkage": "dynamic",
+            "required": true
+          }
+        ],
+        "fileManifest": "files.json",
+        "provenance": "provenance.json",
+        "notices": "THIRD_PARTY_NOTICES.md"
+      },
+      {
+        "id": "linux-x64",
+        "target": {
+          "triple": "x86_64-unknown-linux-gnu",
+          "os": "linux",
+          "arch": "x64",
+          "minimumLibc": "2.36",
+          "cpuBaseline": "x86-64",
+          "libc": "glibc"
+        },
+        "url": "https://github.com/GreenPandaStudios/aug-blake3/releases/download/v0.1.3/native-linux-x64.tar.gz",
+        "sha256": "67e682239e6133a29e381ee2b0c59beb3070f7cb049a487d0709e4be9714232f",
+        "maximumDownloadBytes": 90330447,
+        "maximumUnpackedBytes": 90846850,
+        "link": {
+          "kind": "dynamic",
+          "libraries": [
+            "lib/libaug_blake3.so.1"
+          ]
+        },
+        "runtime": {
+          "files": [
+            "lib/libaug_blake3.so.1",
+            "lib/libgcc_s.so.1"
+          ],
+          "closureManifest": "runtime-files.json",
+          "relocation": "loader-relative"
+        },
+        "components": [
+          {
+            "id": "https://github.com/BLAKE3-team/BLAKE3",
+            "version": "1.8.7",
+            "compatibilityKey": "aug-blake3-runtime",
+            "linkage": "static",
+            "required": true
+          },
+          {
+            "id": "gcc-runtime",
+            "version": "12.2.0-14+deb12u1",
+            "compatibilityKey": "gcc-runtime",
+            "linkage": "dynamic",
+            "required": true
+          }
+        ],
+        "fileManifest": "files.json",
+        "provenance": "provenance.json",
+        "notices": "THIRD_PARTY_NOTICES.md"
+      },
+      {
         "id": "macos-arm64",
         "target": {
           "triple": "aarch64-apple-darwin",
@@ -25,10 +121,10 @@
           "cpuBaseline": "armv8-a",
           "libc": "libSystem"
         },
-        "url": "https://github.com/GreenPandaStudios/aug-blake3/releases/download/v0.1.1/native-macos-arm64.tar.gz",
-        "sha256": "0b754540be9cc091e8ccd0d64fae9960f6ac72b89b84bfaaa016eb36237e07a4",
-        "maximumDownloadBytes": 171974,
-        "maximumUnpackedBytes": 500941,
+        "url": "https://github.com/GreenPandaStudios/aug-blake3/releases/download/v0.1.3/native-macos-arm64.tar.gz",
+        "sha256": "2eae982e532845a67077abe9918c4eb736775fcbddfb6eef552303400687ffa5",
+        "maximumDownloadBytes": 169406,
+        "maximumUnpackedBytes": 503261,
         "link": {
           "kind": "dynamic",
           "libraries": [
@@ -60,9 +156,11 @@
       "recipe": "native/build.json",
       "inputs": "native/sources.lock.json",
       "tools": [
-        "Rust 1.98.1",
-        "Cargo",
-        "Apple macOS SDK"
+        "Node 24+",
+        "Clang",
+        "macOS: Apple SDK",
+        "GNU/Linux: Docker with the pinned Debian 12 maintainer image and patchelf",
+        "Rust and Cargo 1.98.1"
       ],
       "automatic": false
     }
