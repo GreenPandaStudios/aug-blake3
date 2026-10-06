@@ -2,6 +2,10 @@
 
 # `contracts.aug`
 
+<!-- August spec revision: schema=1 compiler=1.0.0 source-sha256=fcd803430c01fb58f0989e1b7f94a482cf9422ce3400c3cd60d0f5e99e853414 -->
+
+[Interactions and sequences](contracts.aug.diagrams.md)
+
 <a id="symbol-HashError"></a>
 ## `HashError` · class · [source](contracts.aug#L2)
 

@@ -1,9 +1,18 @@
 {
   "format": 1,
   "files": [
+    ".aug-spec/diagrams/folders/src/index.md",
+    ".aug-spec/diagrams/index.md",
+    ".aug-spec/packages/@greenpandastudios/aug-blake3/0.2.0/native.abi.json",
+    "src/api.aug.diagrams.md",
     "src/api.aug.md",
+    "src/contracts.aug.diagrams.md",
     "src/contracts.aug.md",
+    "src/export.aug.diagrams.md",
     "src/export.aug.md"
   ],
-  "digest": "72eb8c67b2bb515036d3f4560599f9bf0292732067d6c97bf0dcd2481fcf2e42"
+  "nativeDescriptors": {
+    ".aug-spec/packages/@greenpandastudios/aug-blake3/0.2.0/native.abi.json": "3bf8dea97cde70a03021bf77ea08314d6d37fe7b4935ff16030b2ab929c21279"
+  },
+  "digest": "50b00063e426a9d8e2cd4f12e050d2e0f88e3874e6807c80b09bf2b3333366f9"
 }
