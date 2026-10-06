@@ -2,6 +2,10 @@
 
 # `export.aug`
 
+<!-- August spec revision: schema=1 compiler=1.0.0 source-sha256=e4169caf24caa9fcf21740090c0f617a626281b5deee1d5fd90e925673681e54 -->
+
+[Interactions and sequences](export.aug.diagrams.md)
+
 ## Exports
 
 Export the declaration `HashError` from [`contracts.aug`](contracts.aug.md#symbol-HashError). Export the declaration `hash` from [`api.aug`](api.aug.md#symbol-hash).

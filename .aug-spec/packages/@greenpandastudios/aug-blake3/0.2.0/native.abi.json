@@ -1,0 +1,29 @@
+{
+  "format": 1,
+  "profile": "aug-native-abi-1",
+  "resources": [],
+  "functions": [
+    {
+      "module": "api",
+      "name": "_hash",
+      "symbol": "aug_blake3_hash_v1",
+      "params": [
+        {
+          "name": "input",
+          "kind": "bytes"
+        }
+      ],
+      "result": {
+        "kind": "utf8",
+        "release": "aug_blake3_text_release_v1"
+      },
+      "error": "contracts.HashError",
+      "callingConvention": "C",
+      "status": "i32",
+      "uses": [],
+      "changes": [],
+      "thread": "caller",
+      "retainsInputs": false
+    }
+  ]
+}
